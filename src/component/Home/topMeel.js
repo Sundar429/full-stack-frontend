@@ -1,0 +1,42 @@
+export const topMeel=[
+    {
+        image:"https://cdn.pixabay.com/photo/2017/12/09/08/18/pizza-3007395_1280.jpg",
+        title:"Pizza"
+    },
+    {
+        image:"https://cdn.pixabay.com/photo/2023/10/08/13/03/ai-generated-8302142_640.jpg",
+        title:"Burger"
+    },
+    {
+        image:"https://cdn.pixabay.com/photo/2016/11/29/04/00/bread-1867208_640.jpg",
+        title:"Sandwich"
+    },
+    {
+        image:"https://cdn.pixabay.com/photo/2016/11/22/18/52/cake-1850011_640.jpg",
+        title:"Cake"
+    },
+    {
+        image:"https://cdn.pixabay.com/photo/2024/01/18/17/20/ai-generated-8517258_640.jpg",
+        title:"Biryani"
+    },
+    {
+        image:"https://cdn.pixabay.com/photo/2015/10/01/14/26/fried-rice-967081_640.jpg",
+        title:"Fried Rice"
+    },
+    {
+        image:"https://cdn.pixabay.com/photo/2014/12/22/12/22/food-577224_640.jpg",
+        title:"South Food"
+    },
+    {
+        image:"https://cdn.pixabay.com/photo/2016/08/25/00/22/chicken-1618459_640.jpg",
+        title:"Chicken"
+    },
+    {
+        image:"https://cdn.pixabay.com/photo/2019/08/30/09/17/noodles-4440831_640.jpg",
+        title:"Noodles"
+    },
+    {
+        image:"https://cdn.pixabay.com/photo/2022/01/27/07/34/masala-dosa-6971359_640.jpg",
+        title:"Dosa"
+    }
+]
