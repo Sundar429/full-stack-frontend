@@ -22,7 +22,7 @@ const menu = [
     { title: "Logout", icon: <LogoutIcon />, path: "/" },
 ]
 const AdminSideBar = ({handleClose }) => {
-    const isSmallScreen = useMediaQuery("(max-width:424px)")
+    const isSmallScreen = useMediaQuery("(max-width:350px)")
 
     const navigate = useNavigate();
     const dispatch = useDispatch()
@@ -46,7 +46,7 @@ const AdminSideBar = ({handleClose }) => {
                     sx={{ zIndex: 1 }}>
 
 
-                    <div className='w-[70vw] lg:w-[20vw] min-[424px]:w-[12vw] h-screen flex flex-col justify-center text-xl space-y-[1.65rem]'>
+                    <div className='w-[70vw] lg:w-[20vw] min-[350px]:w-[12vw] h-screen flex flex-col justify-center text-xl space-y-[1.65rem]'>
                         {menu.map((item, i) => <>
                             <div onClick={() => handleNavigate(item)} className='px-5 flex items-center gap-5 cursor-pointer'>
                                 {item.icon}

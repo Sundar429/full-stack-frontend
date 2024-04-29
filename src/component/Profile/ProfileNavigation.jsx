@@ -27,7 +27,7 @@ const menu=[
 ]
 
 export const ProfileNavigation = ({open,handleClose}) => {
-    const isSmallScreen=useMediaQuery('(max-width:424px)')
+    const isSmallScreen=useMediaQuery('(max-width:350px)')
     const navigate=useNavigate();
     const dispatch=useDispatch()
 
@@ -49,11 +49,11 @@ export const ProfileNavigation = ({open,handleClose}) => {
            anchor='left'
            sx={{zIndex:-1,position:"sticky"}}>
 
-            <div  className="w-[50vw] min-[424px]:w-[12vw] lg:w-[20vw] h-[100vh] flex flex-col justify-center text-xl pt-16 gap-8 ">
+            <div  className="w-[50vw] min-[350px]:w-[15vw] lg:w-[20vw] h-[100vh] flex flex-col justify-center text-xl pt-16 gap-8 ">
                 {menu.map((item,i)=><React.Fragment key={item.title}>
                 <div  onClick={()=>handleNavigate(item)} className="px-5 flex items-center space-x-5 cursor-pointer ">
                     {item.icon}
-                    <span className="min-[424px]:hidden lg:block ">{item.title}</span>
+                    <span className="min-[350px]:hidden lg:block ">{item.title}</span>
                 </div>
                 {i!== menu.length-1 && <Divider/>}
                 </React.Fragment>)}

@@ -15,7 +15,7 @@ const Orders = () => {
 
   }
   return (
-    <div className='min-[424px]:w-[70vw] mx-auto p-4 px-2'>
+    <div className='min-[350px]:w-[70vw] mx-auto p-4 px-2'>
      <Card className='p-5'>
       <Typography sx={{paddingBottom:"1rem"}} variant='h5'>
         Order Status

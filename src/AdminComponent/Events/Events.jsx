@@ -62,7 +62,7 @@ const Events = () => {
   }
   return (
     <div>
-      <div className='min-[424px]:w-[70vw] mx-auto px-2 p-5'>
+      <div className='min-[350px]:w-[70vw] mx-auto px-2 p-5'>
         <Button onClick={handleOpen} variant='contained'>Create New Event</Button>
         
             <Modal

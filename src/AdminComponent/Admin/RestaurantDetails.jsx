@@ -16,7 +16,7 @@ const RestaurantDetails = () => {
     }))
   }
   return (
-    <div className='min-[424px]:w-[70vw] mx-auto p-4 lg:px-20 px-5 pb-10'>
+    <div className='min-[350px]:w-[70vw] mx-auto p-4 lg:px-20 px-5 pb-10'>
       <div className='py-5 flex justify-center items-center gap-5'>
 
         <h1 className='text-2xl lg:text-7xl text-center font-bold p-5'>{restaurant.usersRestaurant?.name}</h1>

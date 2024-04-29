@@ -27,8 +27,8 @@ function Home() {
 
             <div className='w-[50vw] z-10 text-center'>
 
-                <p className='text-2xl lg:text-6xl font-bold z-10 py-5'>Sundar Foods</p>
-                <p className='z-10 text-gray-300 text-xl lg:text-4xl'>Nothing Brings People Together, Like Good Food.</p>
+                <p className='text-2xl lg:text-6xl min-[350px]:text-2xl font-bold z-10 py-5'>Sundar Foods</p>
+                <p className='z-10 text-gray-300 text-xl lg:text-4xl '>Nothing Brings People Together, Like Good Food.</p>
 
             </div>
 

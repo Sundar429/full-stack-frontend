@@ -14,9 +14,9 @@ const Orders = () => {
   dispatch(getUsersOrder(jwt))
   },[auth.jwt])
   return (
-    <div className='min-[424px]:w-[70vw] mx-auto p-4 px-2 flex items-center flex-col'>
+    <div className='min-[424px]:w-[80vw] min-[525px]:w-[80vw] mx-auto p-4 px-2 flex items-center flex-col'>
         <h1 className='text-xl text-center py-7 font-semibold'>My Orders</h1>
-        <div className='space-y-5 w-full md:w-[45%] min-[424px]:w-[60%] lg:w-1/2'>
+        <div className='space-y-5 w-full md:w-[45%] min-[350px]:w-[80%] min-[450px]:w-[80%] lg:w-1/2'>
             {
                 order.orders.map((order)=>order.items.map((item)=><OrderCard order={order} item={item}/>))
             }

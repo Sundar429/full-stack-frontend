@@ -62,7 +62,7 @@ const CreateMenuForm = () => {
         dispatch(getIngredientsOfRestaurant({jwt,id:restaurant.usersRestaurant.id}))
       },[]);
     return (
-        <div className='min-[424px]:w-[70vw] mx-auto p-4 py-10 px-5 lg:flex items-center justify-center min-h-screen'>
+        <div className='min-[350px]:w-[70vw] mx-auto p-4 py-10 px-5 lg:flex items-center justify-center min-h-screen'>
             <div className='lg:max-w-4xl'>
                 <h1 className='font-bold text-2xl text-center py-2'>
                     Add New Menu
