@@ -12,10 +12,10 @@ export const getAllRestaurantsAction=(token)=>{
                 }
             });
             dispatch({type:GET_ALL_RESTAURANTS_SUCCESS,payload:data})
-            console.log("all restaurants",data);
+            // console.log("all restaurants",data);
             
         } catch (error) {
-            console.log("catch error",error);
+            // console.log("catch error",error);
             dispatch({type:GET_ALL_RESTAURANTS_FAILURE,payload:error})
             
         }
