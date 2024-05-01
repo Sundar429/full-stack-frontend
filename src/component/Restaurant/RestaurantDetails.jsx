@@ -40,7 +40,7 @@ function RestaurantDetails() {
     }
   
 
-    console.log("restaurant",restaurant);
+    // console.log("restaurant",restaurant);
 
     useEffect(()=>{
         dispatch(getRestaurantById({jwt,restaurantId:id}))

@@ -39,7 +39,7 @@ const Events = () => {
   const[formValues,setFormValues]=React.useState(initialValues)
   const handleSubmit=(e)=>{
     e.preventDefault()
-    console.log("submit",formValues);
+    // console.log("submit",formValues);
     dispatch(createEventAction({data:formValues,restaurantId:restaurant.usersRestaurant?.id,jwt}))
     setFormValues({
       ...initialValues,

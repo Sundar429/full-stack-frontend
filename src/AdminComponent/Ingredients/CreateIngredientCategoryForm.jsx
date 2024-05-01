@@ -12,7 +12,7 @@ const CreateIngredientCategoryForm = () => {
         e.preventDefault()
         const data={name:formData.name,restaurantId:restaurant.usersRestaurant.id}
        
-        console.log(formData);
+        // console.log(formData);
         dispatch(createIngredientCategory({data,jwt}))
 
     }

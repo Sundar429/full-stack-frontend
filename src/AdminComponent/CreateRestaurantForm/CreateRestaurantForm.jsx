@@ -50,7 +50,7 @@ const CreateRestaurantForm = () => {
             openingHours:values.openingHours,
             images:values.images
            }
-           console.log("data----",data);
+          //  console.log("data----",data);
            dispatch(createRestaurant({data,token:jwt}))
 
     }

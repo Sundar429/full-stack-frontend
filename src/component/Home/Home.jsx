@@ -12,7 +12,7 @@ function Home() {
   const jwt=localStorage.getItem("jwt")
   const { restaurant }=useSelector((store)=>store)
 
-  console.log("restaurant",restaurant);
+  // console.log("restaurant",restaurant);
 
   useEffect(()=>{
 

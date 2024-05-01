@@ -16,7 +16,7 @@ const CreateFoodCategory = () => {
             }
         }
         dispatch(createCategoryAction({reqData:data,jwt:localStorage.getItem("jwt")}))
-        console.log(data);
+        // console.log(data);
 
     }
     const handleInputChange=(e)=>{

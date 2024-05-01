@@ -13,14 +13,14 @@ export const findCart = (token) => {
                 }
             });
 
-            console.log("my cart",response.data);
+            // console.log("my cart",response.data);
             dispatch({ type: FIND_CART_SUCCESS, payload: response.data })
 
 
 
         } catch (error) {
 
-                  console.log("catch error",error);
+                //   console.log("catch error",error);
             dispatch({ type: FIND_CART_FAILURE, payload: error })
 
         }
@@ -68,7 +68,7 @@ export const addItemToCart = (reqData) => {
                 }
             });
 
-            console.log("add item to cart",data);
+            // console.log("add item to cart",data);
             // console.log("cartitems",reqData.cartItems);
             dispatch({ type: ADD_ITEM_TO_CART_SUCCESS, payload:data })
           
@@ -97,7 +97,7 @@ export const updateCartItem = (reqData) => {
             });
 
 
-            console.log("update cartItem",data);
+            // console.log("update cartItem",data);
       
             dispatch({ type: UPDATE_CARTITEM_SUCCESS, payload: data })
 
@@ -126,7 +126,7 @@ export const removeCartItem = ({cartItemId,jwt}) => {
             });
 
 
-            console.log("remove cartItem",data);
+            // console.log("remove cartItem",data);
       
             dispatch({ type: REMOVE_CARTITEM_SUCCESS, payload: cartItemId })
 
@@ -135,7 +135,7 @@ export const removeCartItem = ({cartItemId,jwt}) => {
         } catch (error) {
 
             
-            console.log("catch error",error);
+            // console.log("catch error",error);
             
             dispatch({ type: REMOVE_CARTITEM_FAILURE, payload: error.message })
 
@@ -157,7 +157,7 @@ export const clearCartAction = () => {
             });
 
 
-            console.log("clear cart",data);
+            // console.log("clear cart",data);
       
             dispatch({ type: CLEARE_CART_SUCCESS, payload: data })
 
@@ -166,7 +166,7 @@ export const clearCartAction = () => {
         } catch (error) {
 
             
-            console.log("catch error",error);
+            // console.log("catch error",error);
             
             dispatch({ type: CLEARE_CART_FAILURE, payload: error.message })
 

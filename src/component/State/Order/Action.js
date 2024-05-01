@@ -55,12 +55,12 @@ export const getUsersOrder=(jwt)=>{
             });
 
         
-            console.log("users order",data);
+            // console.log("users order",data);
             dispatch({type:GET_USERS_ORDERS_SUCCESS,payload:data})
            
             
         } catch (error) {
-            console.log("catch error",error);
+            // console.log("catch error",error);
             dispatch({type:GET_USERS_ORDERS_FAILURE,payload:error})
             
         }

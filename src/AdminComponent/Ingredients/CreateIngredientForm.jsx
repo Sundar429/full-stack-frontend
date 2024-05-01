@@ -23,7 +23,7 @@ const CreateIngredientForm= () => {
         }
         dispatch(createIngredient({data,jwt}))
  
-        console.log(data);
+        // console.log(data);
       
 
     }

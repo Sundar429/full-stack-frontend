@@ -34,7 +34,7 @@ const MenuCard = ({ item } ) => {
     else{
       setSelectedIngredients([...selectedIngredients,itemName])
     }
-    console.log("value",itemName);
+    // console.log("value",itemName);
 
   }
   const handleAddItemToCart=(e)=>{
@@ -50,7 +50,7 @@ const MenuCard = ({ item } ) => {
       }
     }
     dispatch(addItemToCart(reqData))
-   console.log("req data",reqData);
+  //  console.log("req data",reqData);
   }
     // Check if item.ingredients is defined and is an array before calling categorizeIngredients
     const ingredientsByCategory = Array.isArray(item.ingredientsItems) ? categorizeIngredients(item.ingredientsItems) : {};

@@ -22,7 +22,7 @@ const RegisterForm = () => {
     const navigate = useNavigate();
     const dispatch=useDispatch()
     const handleSubmit = (values) => {
-        console.log("Form values", values);
+        // console.log("Form values", values);
         dispatch(registerUser({userData:values,navigate}))
     }
     return (

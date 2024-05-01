@@ -41,7 +41,7 @@ const CreateMenuForm = () => {
         onSubmit: (values) => {
             values.restaurantId = restaurant.usersRestaurant.id
             dispatch(createMenuItem({menu:values,jwt}))
-            console.log("data----", values);
+            // console.log("data----", values);
         }
     })
     const handleImageChange = async (e) => {

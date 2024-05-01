@@ -15,13 +15,13 @@ export const createMenuItem = ({ menu, jwt }) => {
                 }
             });
 
-            console.log("created menu ", data);
+            // console.log("created menu ", data);
             dispatch({ type: CREATE_MENU_ITEM_SUCCESS, payload: data })
 
 
 
         } catch (error) {
-            console.log("catch error", error);
+            // console.log("catch error", error);
             dispatch({ type: CREATE_MENU_ITEM_FAILURE, payload: error })
 
         }
@@ -42,7 +42,7 @@ export const getMenuItemsByRestaurantId = (reqData) => {
                 }
             });
 
-            console.log("menu item by restaurants ", data);
+            // console.log("menu item by restaurants ", data);
             // console.log("menu item by restaurants ", reqData.restaurantId);
             // console.log("menu item by restaurants ", reqData.vegetarian);
             // console.log("menu item by restaurants ", reqData.nonVeg);
@@ -53,7 +53,7 @@ export const getMenuItemsByRestaurantId = (reqData) => {
 
 
         } catch (error) {
-            console.log("catch error", error);
+            // console.log("catch error", error);
             dispatch({ type: GET_MENU_ITEMS_BY_RESTAURANT_ID_FAILURE, payload: error })
 
         }
@@ -74,13 +74,13 @@ export const searchMenuItem = ({ keyword, jwt }) => {
                 }
             });
 
-            console.log("data ----------- ", data);
+            // console.log("data ----------- ", data);
             dispatch({ type: SEARCH_MENU_ITEM_SUCCESS, payload: data })
 
 
 
         } catch (error) {
-            console.log("catch error", error);
+            // console.log("catch error", error);
             dispatch({ type: SEARCH_MENU_ITEM_FAILURE, payload: error })
 
         }
@@ -129,13 +129,13 @@ export const updateMenuItemsAvailability = ({ foodId, jwt }) => {
                 }
             });
 
-            console.log("update menu availability", data);
+            // console.log("update menu availability", data);
             dispatch({ type: UPDATE_MENU_ITEMS_AVAILABILITY_SUCCESS, payload: data })
 
 
 
         } catch (error) {
-            console.log("catch error", error);
+            // console.log("catch error", error);
             dispatch({ type: UPDATE_MENU_ITEMS_AVAILABILITY_FAILURE, payload: error })
 
         }
@@ -156,13 +156,13 @@ export const deleteFoodAction = ({ foodId, jwt }) => {
                 }
             });
 
-            console.log("delete food ", data);
+            // console.log("delete food ", data);
             dispatch({ type: DELETE_MENU_ITEM_SUCCESS, payload: foodId })
 
 
 
         } catch (error) {
-            console.log("catch error", error);
+            // console.log("catch error", error);
             dispatch({ type: DELETE_MENU_ITEM_FAILURE, payload: error })
 
         }

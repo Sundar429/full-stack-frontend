@@ -15,11 +15,11 @@ export const registerUser=(reqData)=>async(dispatch)=>{
             reqData.navigate("/")
         }
         dispatch({type:REGISTER_SUCCESS,payload:data.jwt})
-        console.log("register success",data);
+        // console.log("register success",data);
         
     } catch (error) {
         dispatch({type:REGISTER_FAILURE,payload:error})
-        console.log("error",error);
+        // console.log("error",error);
         
     }
 }
@@ -39,11 +39,11 @@ export const loginUser=(reqData)=>async(dispatch)=>{
             reqData.navigate("/")
         }
         dispatch({type:LOGIN_SUCCESS,payload:data.jwt})
-        console.log("login success",data);
+        // console.log("login success",data);
         
     } catch (error) {
         dispatch({type:LOGIN_FAILURE,payload:error})
-        console.log("error",error);
+        // console.log("error",error);
         
     }
 }
@@ -60,10 +60,10 @@ export const getUser=(jwt)=>async(dispatch)=>{
 
       
         dispatch({type:GET_USER_SUCCESS,payload:data})
-        console.log("user profile",data);
+        // console.log("user profile",data);
     } catch (error) {
         dispatch({type:GET_USER_FAILURE,payload:error})
-        console.log("error",error);
+        // console.log("error",error);
         
     }
 }
@@ -80,10 +80,10 @@ export const addToFavorite=({jwt,restaurantId})=>async(dispatch)=>{
 
       
         dispatch({type:ADD_TO_FAVORITE_SUCCESS,payload:data})
-        console.log("added to favorites",data);
+        // console.log("added to favorites",data);
     } catch (error) {
         dispatch({type:ADD_TO_FAVORITE_FAILURE,payload:error})
-        console.log("error",error);
+        // console.log("error",error);
         
     }
 }
@@ -96,9 +96,9 @@ export const logout=()=>async(dispatch)=>{
        
       localStorage.clear()
         dispatch({type:LOGOUT})
-        console.log("logout success ");
+        // console.log("logout success ");
     } catch (error) {
-        console.log("error",error);
+        // console.log("error",error);
         
     }
 }

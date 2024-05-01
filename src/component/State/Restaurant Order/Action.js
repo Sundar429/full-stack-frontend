@@ -13,12 +13,12 @@ export const updateOrderStatus=({orderId,orderStatus,jwt})=>{
             });
 
             const updateOrder=response.data
-            console.log("updated order",updateOrder);
+            // console.log("updated order",updateOrder);
             dispatch({type:UPDATE_ORDER_STATUS_SUCCESS,payload:updateOrder})
            
             
         } catch (error) {
-            console.log("catch error",error);
+            // console.log("catch error",error);
             dispatch({type:UPDATE_ORDER_STATUS_FAILURE,payload:error})
             
         }
@@ -40,12 +40,12 @@ export const fetchRestaurantOrder=({restaurantId,orderStatus,jwt})=>{
             });
 
             const orders=data
-            console.log("restaurants order",orders);
+            // console.log("restaurants order",orders);
             dispatch({type:GET_RESTAURANTS_ORDER_SUCCESS,payload:orders})
            
             
         } catch (error) {
-            console.log("catch error",error);
+            // console.log("catch error",error);
             dispatch({type:GET_RESTAURANTS_ORDER_FAILURE,error})
             
         }
