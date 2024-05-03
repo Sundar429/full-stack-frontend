@@ -4,6 +4,8 @@ import {useLocation, useNavigate } from "react-router-dom";
 import { style } from '../Cart/Cart';
 import RegisterForm from './RegisterForm';
 import LoginForm from './LoginForm';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Auth = () => {
 
@@ -14,7 +16,8 @@ const Auth = () => {
     }
     return (
         <>
-
+ {/* Place ToastContainer at a high level */}
+ <ToastContainer position="top-center" autoClose={3000} />
 
             <Modal   onClose={handleOnClose} open={
                   

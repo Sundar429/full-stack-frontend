@@ -16,10 +16,14 @@ export const registerUser=(reqData)=>async(dispatch)=>{
         }
         dispatch({type:REGISTER_SUCCESS,payload:data.jwt})
         // console.log("register success",data);
+          // Return success
+          return { success: true };
         
     } catch (error) {
         dispatch({type:REGISTER_FAILURE,payload:error})
         // console.log("error",error);
+        // Return failure
+        return { success: false, error:'Registration failed.' };
         
     }
 }
@@ -40,10 +44,15 @@ export const loginUser=(reqData)=>async(dispatch)=>{
         }
         dispatch({type:LOGIN_SUCCESS,payload:data.jwt})
         // console.log("login success",data);
+              // Return success
+              return { success: true };
         
     } catch (error) {
         dispatch({type:LOGIN_FAILURE,payload:error})
         // console.log("error",error);
+        // Return failure
+        return { success: false, error: 'Login failed.' };
+        
         
     }
 }

@@ -15,6 +15,8 @@ import { getUser } from './component/State/Authentication/Action';
 import { findCart } from './component/State/Cart/Action'
 import Routers from './Routers/Routers';
 import { getRestaurantByUserId } from './component/State/Restaurant/Action';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 function App() {
@@ -34,8 +36,13 @@ function App() {
   return (
 
     <ThemeProvider theme={darkTheme}>
+      {/* Place ToastContainer here */}
+      <ToastContainer position="top-center" autoClose={3000} closeOnClick pauseOnHover draggable />
+   
+
       <CssBaseline />
       <Routers />
+     
     </ThemeProvider>
 
 
