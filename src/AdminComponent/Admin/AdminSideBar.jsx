@@ -50,7 +50,7 @@ const AdminSideBar = ({handleClose }) => {
                         {menu.map((item, i) => <>
                             <div onClick={() => handleNavigate(item)} className='px-5 flex items-center gap-5 cursor-pointer'>
                                 {item.icon}
-                                <span className="min-[424px]:hidden lg:block ">{item.title}</span>
+                                <span className="min-[350px]:hidden lg:block ">{item.title}</span>
 
                             </div>
                             {i !== menu.length - 1 && <Divider />}
