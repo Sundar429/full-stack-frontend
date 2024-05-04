@@ -161,7 +161,7 @@ const Cart = () => {
             <h1 className='text-center font-semibold text-2xl py-10'>Choose Delivery Address</h1>
 
             <div className="flex gap-5 flex-wrap justify-center">
-              {[1, 2, 3].map((item) => <AddressCard handleSelectAddress={createOrderUsingSelectedAddress} key={item} item={item} showButton={true} />)}
+              {/* {[1, 2, 3].map((item) => <AddressCard handleSelectAddress={createOrderUsingSelectedAddress} key={item} item={item} showButton={true} />)} */}
               <Card className="flex gap-5 w-64 p-5">
                 <AddLocationAltIcon />
                 <div className='space-y-3 text-gray-500'>
