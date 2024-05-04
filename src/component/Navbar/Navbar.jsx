@@ -35,13 +35,13 @@ export const Navbar = () => {
       
       <div className='flex items-center space-x-2 lg:space-x-10'>
 
-        <div className=''>
+        {/* <div className=''>
             <IconButton >
 
                 <SearchIcon sx={{fontSize:"1.5rem"}}/>
 
             </IconButton>
-        </div>
+        </div> */}
 
         <div className=''>
 
